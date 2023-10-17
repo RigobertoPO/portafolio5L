@@ -21,7 +21,7 @@
                     <li><a href="Administracion/pedidos.php">Pedidos</a></li>
                     <li><a href="blog.php">blog</a></li>
                     <li><a href="contacto.php">Contactos</a></li>
-                    <li><a class="sesion" href="">Iniciar sesión</a></li>
+                    <li><a class="sesion" href="login.php">Iniciar sesión</a></li>
                 </ul>          
             </div>
         </nav> 
