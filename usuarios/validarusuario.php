@@ -4,7 +4,7 @@ $password=$_POST['password'];
 require_once '../Core/usuario.php';
 $usuario=new Usuario();
 if(isset($correo)&& isset($password)){
-    $resultado=$usuario->AutenticaUsuario($correo,$password);
+    $resultado=$usuario->AutenticaUsuario($correo,MD5($password));
     if(count($resultado)>0){
         foreach($resultado as $item){
             session_start();

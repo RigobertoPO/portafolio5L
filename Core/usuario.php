@@ -16,13 +16,14 @@
             try {
                 include '../conexion.php';
                 $conexion=new Conexion();
-                $consulta=$conexion->prepare("INSERT INTO usuarios(NombreCompleto,
-                CorreoElectronico,Password,Tipo,FechaRegistro)VALUES(:nombre,:correo,
-                :password,:tipo,NOW()");
-                $consulta->bindParam(':nombre',$nombre, PDO::PARAM_STR);
-                $consulta->bindParam(':correo',$correo, PDO::PARAM_STR);
-                $consulta->bindParam(':password',$password, PDO::PARAM_STR);
-                $consulta->bindParam(':tipo',$tipo, PDO::PARAM_INT);
+                $consulta=$conexion->prepare("INSERT INTO usuarios(
+                    NombreCompleto,CorreoElectronico,Password,Tipo,
+                    FechaRegistro) VALUES(:nombre,:correo,:password,:tipo,
+                    NOW())");
+                $consulta->bindParam(":nombre",$nombre, PDO::PARAM_STR);
+                $consulta->bindParam(":correo",$correo, PDO::PARAM_STR);
+                $consulta->bindParam(":password",$password, PDO::PARAM_STR);
+                $consulta->bindParam(":tipo",$tipo, PDO::PARAM_INT);
                 $consulta->execute();
                 return true;
             } catch (Exception $e) {
