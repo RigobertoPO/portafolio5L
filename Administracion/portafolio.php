@@ -29,6 +29,7 @@
                     <li><a href="../quien.php">Quien soy</a></li>
                     <li><a href="../Administracion/portafolio.php">PortaFolio</a></li>
                     <li><a href="../Administracion/pedidos.php">Pedidos</a></li>
+                    <li><a href="../Usuarios/administrarusuarios.php">Usuarios</a></li>
                     <li><a href="../blog.php">blog</a></li>
                     <li><a href="../contacto.php">Contactos</a></li>
                     <li>
