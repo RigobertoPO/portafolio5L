@@ -66,5 +66,15 @@
             $consulta->setFetchMode(PDO::FETCH_ASSOC);
             return $consulta->fetchAll();
         }
+        public function ObtenerUsuariosId($id){
+            include '../conexion.php';
+            $conexion=new Conexion();
+            $consulta=$conexion->prepare("SELECT * FROM usuarios
+            WHERE Id=:id");
+            $consulta->bindParam(":correo",$correo,PDO::PARAM_STR);
+            $consulta->execute();
+            $consulta->setFetchMode(PDO::FETCH_ASSOC);
+            return $consulta->fetchAll();
+        }
     }
 ?>
