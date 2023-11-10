@@ -92,7 +92,7 @@
                             break;
                         }
                     echo '<td><a href="eliminarusuario.php?id='.$item["Id"].'"><img src="../img/Cancelar.png"/></a></td>';
-                    echo '<td><img src="../img/Editar.png"/></td>';
+                    echo '<td><a href="editarusuario.php?id='.$item["Id"].'"><img src="../img/Editar.png"/></a></td>';
                 }
             ?>
         </tbody>
