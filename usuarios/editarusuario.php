@@ -17,11 +17,13 @@ if ($resultado==true){
     <title>Document</title>
 </head>
 <body>
-    <form action="" method="post">
+    <form action="modificarusuario.php" method="post">
+        <label for="">Id:</label>
+        <input type="text" name="id" readonly value="<?php echo $idUsuario ?>">
         <label for="">Nombre:</label>
         <input type="text" name="nombre" value="<?php echo $nombre ?>">
         <label for="">Correo:</label>
-        <input type="text" name="nombre" value="<?php echo $correo ?>">
+        <input type="text" name="correo" value="<?php echo $correo ?>">
         <input type="submit" value="Guardar">
     </form>
 </body>
